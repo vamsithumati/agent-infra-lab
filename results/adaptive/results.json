@@ -1,0 +1,1713 @@
+{
+ "clean": {
+  "S0 \u00b7 no cache": {
+   "questions": 2000,
+   "sor_question": 1286099,
+   "sor_upkeep": 0,
+   "sor_verify": 0,
+   "sor_total": 1286099,
+   "rm_rows": 0,
+   "stale": 0,
+   "stale_rate": 0.0,
+   "cache_hits": 0,
+   "served_prepared": 0,
+   "log": [],
+   "incidents": [],
+   "fault_at_q": {},
+   "verifier": {},
+   "tools": []
+  },
+  "S1 \u00b7 TTL cache (400 ticks)": {
+   "questions": 2000,
+   "sor_question": 272411,
+   "sor_upkeep": 0,
+   "sor_verify": 0,
+   "sor_total": 272411,
+   "rm_rows": 0,
+   "stale": 200,
+   "stale_rate": 0.1,
+   "cache_hits": 979,
+   "served_prepared": 0,
+   "log": [],
+   "incidents": [],
+   "fault_at_q": {},
+   "verifier": {},
+   "tools": []
+  },
+  "S2 \u00b7 write-invalidated cache": {
+   "questions": 2000,
+   "sor_question": 1189977,
+   "sor_upkeep": 0,
+   "sor_verify": 0,
+   "sor_total": 1189977,
+   "rm_rows": 0,
+   "stale": 0,
+   "stale_rate": 0.0,
+   "cache_hits": 936,
+   "served_prepared": 0,
+   "log": [],
+   "incidents": [],
+   "fault_at_q": {},
+   "verifier": {},
+   "tools": []
+  },
+  "D \u00b7 static, designer's guess (T1\u2013T3)": {
+   "questions": 2000,
+   "sor_question": 1176042,
+   "sor_upkeep": 36171,
+   "sor_verify": 0,
+   "sor_total": 1212213,
+   "rm_rows": 17039,
+   "stale": 0,
+   "stale_rate": 0.0,
+   "cache_hits": 0,
+   "served_prepared": 1389,
+   "log": [
+    [
+     0,
+     "promote",
+     "T1_claim_blockers"
+    ],
+    [
+     0,
+     "promote",
+     "T2_adjuster_missing_docs"
+    ],
+    [
+     0,
+     "promote",
+     "T3_customer_financials"
+    ]
+   ],
+   "incidents": [],
+   "fault_at_q": {},
+   "verifier": {
+    "checks": 0,
+    "mismatches": 0,
+    "repairs": 0,
+    "rebuilds": 0,
+    "gaps": 0,
+    "replayed": 0
+   },
+   "tools": [
+    "T1_claim_blockers",
+    "T2_adjuster_missing_docs",
+    "T3_customer_financials"
+   ]
+  },
+  "D \u00b7 static, everything (T1\u2013T6)": {
+   "questions": 2000,
+   "sor_question": 0,
+   "sor_upkeep": 36171,
+   "sor_verify": 0,
+   "sor_total": 36171,
+   "rm_rows": 109126,
+   "stale": 0,
+   "stale_rate": 0.0,
+   "cache_hits": 0,
+   "served_prepared": 2000,
+   "log": [
+    [
+     0,
+     "promote",
+     "T1_claim_blockers"
+    ],
+    [
+     0,
+     "promote",
+     "T2_adjuster_missing_docs"
+    ],
+    [
+     0,
+     "promote",
+     "T3_customer_financials"
+    ],
+    [
+     0,
+     "promote",
+     "T4_team_stale_claims"
+    ],
+    [
+     0,
+     "promote",
+     "T5_claim_paid_total"
+    ],
+    [
+     0,
+     "promote",
+     "T6_adjuster_loss_mix"
+    ]
+   ],
+   "incidents": [],
+   "fault_at_q": {},
+   "verifier": {
+    "checks": 0,
+    "mismatches": 0,
+    "repairs": 0,
+    "rebuilds": 0,
+    "gaps": 0,
+    "replayed": 0
+   },
+   "tools": [
+    "T1_claim_blockers",
+    "T2_adjuster_missing_docs",
+    "T3_customer_financials",
+    "T4_team_stale_claims",
+    "T5_claim_paid_total",
+    "T6_adjuster_loss_mix"
+   ]
+  },
+  "S3 \u00b7 self-building": {
+   "questions": 2000,
+   "sor_question": 54535,
+   "sor_upkeep": 36157,
+   "sor_verify": 0,
+   "sor_total": 90692,
+   "rm_rows": 103522,
+   "stale": 0,
+   "stale_rate": 0.0,
+   "cache_hits": 0,
+   "served_prepared": 1666,
+   "log": [
+    [
+     50,
+     "promote",
+     "T4_team_stale_claims"
+    ],
+    [
+     100,
+     "promote",
+     "T2_adjuster_missing_docs"
+    ],
+    [
+     100,
+     "promote",
+     "T6_adjuster_loss_mix"
+    ],
+    [
+     150,
+     "promote",
+     "T1_claim_blockers"
+    ],
+    [
+     1200,
+     "promote",
+     "T3_customer_financials"
+    ],
+    [
+     1250,
+     "promote",
+     "T5_claim_paid_total"
+    ]
+   ],
+   "incidents": [],
+   "fault_at_q": {},
+   "verifier": {
+    "checks": 0,
+    "mismatches": 0,
+    "repairs": 0,
+    "rebuilds": 0,
+    "gaps": 0,
+    "replayed": 0
+   },
+   "tools": [
+    "T1_claim_blockers",
+    "T2_adjuster_missing_docs",
+    "T3_customer_financials",
+    "T4_team_stale_claims",
+    "T5_claim_paid_total",
+    "T6_adjuster_loss_mix"
+   ]
+  },
+  "S4 \u00b7 self-building + self-healing": {
+   "questions": 2000,
+   "sor_question": 74140,
+   "sor_upkeep": 36157,
+   "sor_verify": 43499,
+   "sor_total": 153796,
+   "rm_rows": 101480,
+   "stale": 0,
+   "stale_rate": 0.0,
+   "cache_hits": 0,
+   "served_prepared": 1636,
+   "log": [
+    [
+     50,
+     "promote (shadow)",
+     "T4_team_stale_claims"
+    ],
+    [
+     63,
+     "live",
+     "T4_team_stale_claims"
+    ],
+    [
+     100,
+     "promote (shadow)",
+     "T2_adjuster_missing_docs"
+    ],
+    [
+     100,
+     "promote (shadow)",
+     "T6_adjuster_loss_mix"
+    ],
+    [
+     113,
+     "live",
+     "T2_adjuster_missing_docs"
+    ],
+    [
+     138,
+     "live",
+     "T6_adjuster_loss_mix"
+    ],
+    [
+     150,
+     "promote (shadow)",
+     "T1_claim_blockers"
+    ],
+    [
+     168,
+     "live",
+     "T1_claim_blockers"
+    ],
+    [
+     1200,
+     "promote (shadow)",
+     "T3_customer_financials"
+    ],
+    [
+     1207,
+     "live",
+     "T3_customer_financials"
+    ],
+    [
+     1250,
+     "promote (shadow)",
+     "T5_claim_paid_total"
+    ],
+    [
+     1299,
+     "live",
+     "T5_claim_paid_total"
+    ]
+   ],
+   "incidents": [],
+   "fault_at_q": {},
+   "verifier": {
+    "checks": 5475,
+    "mismatches": 0,
+    "repairs": 0,
+    "rebuilds": 0,
+    "gaps": 0,
+    "replayed": 0
+   },
+   "tools": [
+    "T1_claim_blockers",
+    "T2_adjuster_missing_docs",
+    "T3_customer_financials",
+    "T4_team_stale_claims",
+    "T5_claim_paid_total",
+    "T6_adjuster_loss_mix"
+   ]
+  }
+ },
+ "faulty": {
+  "S0 \u00b7 no cache": {
+   "questions": 2000,
+   "sor_question": 1294126,
+   "sor_upkeep": 0,
+   "sor_verify": 0,
+   "sor_total": 1294126,
+   "rm_rows": 0,
+   "stale": 0,
+   "stale_rate": 0.0,
+   "cache_hits": 0,
+   "served_prepared": 0,
+   "log": [],
+   "incidents": [],
+   "fault_at_q": {
+    "backfill": 600,
+    "rule": 1400
+   },
+   "verifier": {},
+   "tools": []
+  },
+  "S1 \u00b7 TTL cache (400 ticks)": {
+   "questions": 2000,
+   "sor_question": 282066,
+   "sor_upkeep": 0,
+   "sor_verify": 0,
+   "sor_total": 282066,
+   "rm_rows": 0,
+   "stale": 207,
+   "stale_rate": 0.1035,
+   "cache_hits": 974,
+   "served_prepared": 0,
+   "log": [],
+   "incidents": [],
+   "fault_at_q": {
+    "backfill": 600,
+    "rule": 1400
+   },
+   "verifier": {},
+   "tools": []
+  },
+  "S2 \u00b7 write-invalidated cache": {
+   "questions": 2000,
+   "sor_question": 1193175,
+   "sor_upkeep": 0,
+   "sor_verify": 0,
+   "sor_total": 1193175,
+   "rm_rows": 0,
+   "stale": 7,
+   "stale_rate": 0.0035,
+   "cache_hits": 937,
+   "served_prepared": 0,
+   "log": [],
+   "incidents": [],
+   "fault_at_q": {
+    "backfill": 600,
+    "rule": 1400
+   },
+   "verifier": {},
+   "tools": []
+  },
+  "D \u00b7 static, designer's guess (T1\u2013T3)": {
+   "questions": 2000,
+   "sor_question": 1182842,
+   "sor_upkeep": 36237,
+   "sor_verify": 0,
+   "sor_total": 1219079,
+   "rm_rows": 17039,
+   "stale": 105,
+   "stale_rate": 0.0525,
+   "cache_hits": 0,
+   "served_prepared": 1389,
+   "log": [
+    [
+     0,
+     "promote",
+     "T1_claim_blockers"
+    ],
+    [
+     0,
+     "promote",
+     "T2_adjuster_missing_docs"
+    ],
+    [
+     0,
+     "promote",
+     "T3_customer_financials"
+    ]
+   ],
+   "incidents": [],
+   "fault_at_q": {
+    "backfill": 600,
+    "rule": 1400
+   },
+   "verifier": {
+    "checks": 0,
+    "mismatches": 0,
+    "repairs": 0,
+    "rebuilds": 0,
+    "gaps": 65,
+    "replayed": 66
+   },
+   "tools": [
+    "T1_claim_blockers",
+    "T2_adjuster_missing_docs",
+    "T3_customer_financials"
+   ]
+  },
+  "D \u00b7 static, everything (T1\u2013T6)": {
+   "questions": 2000,
+   "sor_question": 0,
+   "sor_upkeep": 36237,
+   "sor_verify": 0,
+   "sor_total": 36237,
+   "rm_rows": 109126,
+   "stale": 198,
+   "stale_rate": 0.099,
+   "cache_hits": 0,
+   "served_prepared": 2000,
+   "log": [
+    [
+     0,
+     "promote",
+     "T1_claim_blockers"
+    ],
+    [
+     0,
+     "promote",
+     "T2_adjuster_missing_docs"
+    ],
+    [
+     0,
+     "promote",
+     "T3_customer_financials"
+    ],
+    [
+     0,
+     "promote",
+     "T4_team_stale_claims"
+    ],
+    [
+     0,
+     "promote",
+     "T5_claim_paid_total"
+    ],
+    [
+     0,
+     "promote",
+     "T6_adjuster_loss_mix"
+    ]
+   ],
+   "incidents": [],
+   "fault_at_q": {
+    "backfill": 600,
+    "rule": 1400
+   },
+   "verifier": {
+    "checks": 0,
+    "mismatches": 0,
+    "repairs": 0,
+    "rebuilds": 0,
+    "gaps": 65,
+    "replayed": 66
+   },
+   "tools": [
+    "T1_claim_blockers",
+    "T2_adjuster_missing_docs",
+    "T3_customer_financials",
+    "T4_team_stale_claims",
+    "T5_claim_paid_total",
+    "T6_adjuster_loss_mix"
+   ]
+  },
+  "S3 \u00b7 self-building": {
+   "questions": 2000,
+   "sor_question": 54535,
+   "sor_upkeep": 36223,
+   "sor_verify": 0,
+   "sor_total": 90758,
+   "rm_rows": 103522,
+   "stale": 198,
+   "stale_rate": 0.099,
+   "cache_hits": 0,
+   "served_prepared": 1666,
+   "log": [
+    [
+     50,
+     "promote",
+     "T4_team_stale_claims"
+    ],
+    [
+     100,
+     "promote",
+     "T2_adjuster_missing_docs"
+    ],
+    [
+     100,
+     "promote",
+     "T6_adjuster_loss_mix"
+    ],
+    [
+     150,
+     "promote",
+     "T1_claim_blockers"
+    ],
+    [
+     1200,
+     "promote",
+     "T3_customer_financials"
+    ],
+    [
+     1250,
+     "promote",
+     "T5_claim_paid_total"
+    ]
+   ],
+   "incidents": [],
+   "fault_at_q": {
+    "backfill": 600,
+    "rule": 1400
+   },
+   "verifier": {
+    "checks": 0,
+    "mismatches": 0,
+    "repairs": 0,
+    "rebuilds": 0,
+    "gaps": 65,
+    "replayed": 66
+   },
+   "tools": [
+    "T1_claim_blockers",
+    "T2_adjuster_missing_docs",
+    "T3_customer_financials",
+    "T4_team_stale_claims",
+    "T5_claim_paid_total",
+    "T6_adjuster_loss_mix"
+   ]
+  },
+  "S4 \u00b7 self-building + self-healing": {
+   "questions": 2000,
+   "sor_question": 74140,
+   "sor_upkeep": 72822,
+   "sor_verify": 43718,
+   "sor_total": 190680,
+   "rm_rows": 101480,
+   "stale": 42,
+   "stale_rate": 0.021,
+   "cache_hits": 0,
+   "served_prepared": 1636,
+   "log": [
+    [
+     50,
+     "promote (shadow)",
+     "T4_team_stale_claims"
+    ],
+    [
+     63,
+     "live",
+     "T4_team_stale_claims"
+    ],
+    [
+     100,
+     "promote (shadow)",
+     "T2_adjuster_missing_docs"
+    ],
+    [
+     100,
+     "promote (shadow)",
+     "T6_adjuster_loss_mix"
+    ],
+    [
+     113,
+     "live",
+     "T2_adjuster_missing_docs"
+    ],
+    [
+     138,
+     "live",
+     "T6_adjuster_loss_mix"
+    ],
+    [
+     150,
+     "promote (shadow)",
+     "T1_claim_blockers"
+    ],
+    [
+     168,
+     "live",
+     "T1_claim_blockers"
+    ],
+    [
+     1200,
+     "promote (shadow)",
+     "T3_customer_financials"
+    ],
+    [
+     1207,
+     "live",
+     "T3_customer_financials"
+    ],
+    [
+     1250,
+     "promote (shadow)",
+     "T5_claim_paid_total"
+    ],
+    [
+     1299,
+     "live",
+     "T5_claim_paid_total"
+    ]
+   ],
+   "incidents": [
+    [
+     650,
+     "reconcile: 2/40 drifted",
+     "missing"
+    ],
+    [
+     650,
+     "drift rebuild",
+     "missing"
+    ],
+    [
+     700,
+     "reconcile: 1/40 drifted",
+     "activity"
+    ],
+    [
+     700,
+     "drift rebuild",
+     "activity"
+    ],
+    [
+     1450,
+     "definition-change rebuild",
+     "missing"
+    ]
+   ],
+   "fault_at_q": {
+    "backfill": 600,
+    "rule": 1400
+   },
+   "verifier": {
+    "checks": 5475,
+    "mismatches": 3,
+    "repairs": 3,
+    "rebuilds": 3,
+    "gaps": 65,
+    "replayed": 66
+   },
+   "tools": [
+    "T1_claim_blockers",
+    "T2_adjuster_missing_docs",
+    "T3_customer_financials",
+    "T4_team_stale_claims",
+    "T5_claim_paid_total",
+    "T6_adjuster_loss_mix"
+   ]
+  }
+ },
+ "faulty_5_seeds": {
+  "no preparation": {
+   "sor_total": 1185210.4,
+   "sor_min": 1107991,
+   "sor_max": 1322811,
+   "stale_rate": 0.0,
+   "stale_min": 0.0,
+   "stale_max": 0.0,
+   "seeds": 5
+  },
+  "self-building, no checks": {
+   "sor_total": 89473.6,
+   "sor_min": 71773,
+   "sor_max": 105752,
+   "stale_rate": 0.0972,
+   "stale_min": 0.067,
+   "stale_max": 0.1235,
+   "seeds": 5
+  },
+  "self-healing, verify every 200": {
+   "sor_total": 210217.2,
+   "sor_min": 168865,
+   "sor_max": 236178,
+   "stale_rate": 0.0465,
+   "stale_min": 0.0275,
+   "stale_max": 0.0765,
+   "seeds": 5
+  },
+  "self-healing, verify every 100": {
+   "sor_total": 215738.2,
+   "sor_min": 177844,
+   "sor_max": 238250,
+   "stale_rate": 0.0213,
+   "stale_min": 0.005,
+   "stale_max": 0.032,
+   "seeds": 5
+  },
+  "self-healing, verify every 50": {
+   "sor_total": 213824.8,
+   "sor_min": 175622,
+   "sor_max": 287943,
+   "stale_rate": 0.0131,
+   "stale_min": 0.007,
+   "stale_max": 0.0175,
+   "seeds": 5
+  },
+  "self-healing, verify every 25": {
+   "sor_total": 243007,
+   "sor_min": 221131,
+   "sor_max": 273234,
+   "stale_rate": 0.0083,
+   "stale_min": 0.004,
+   "stale_max": 0.0155,
+   "seeds": 5
+  },
+  "timer cache, TTL 25 ticks": {
+   "sor_total": 881447.2,
+   "sor_min": 842725,
+   "sor_max": 956400,
+   "stale_rate": 0.005,
+   "stale_min": 0.004,
+   "stale_max": 0.007,
+   "seeds": 5
+  },
+  "timer cache, TTL 100 ticks": {
+   "sor_total": 541956.8,
+   "sor_min": 511987,
+   "sor_max": 554722,
+   "stale_rate": 0.0335,
+   "stale_min": 0.0285,
+   "stale_max": 0.04,
+   "seeds": 5
+  },
+  "timer cache, TTL 400 ticks": {
+   "sor_total": 257315.8,
+   "sor_min": 244414,
+   "sor_max": 278770,
+   "stale_rate": 0.09469999999999999,
+   "stale_min": 0.086,
+   "stale_max": 0.1115,
+   "seeds": 5
+  },
+  "timer cache, TTL 800 ticks": {
+   "sor_total": 165742.6,
+   "sor_min": 157845,
+   "sor_max": 170957,
+   "stale_rate": 0.1358,
+   "stale_min": 0.121,
+   "stale_max": 0.152,
+   "seeds": 5
+  },
+  "write-invalidated cache": {
+   "sor_total": 1047660.6,
+   "sor_min": 977087,
+   "sor_max": 1162294,
+   "stale_rate": 0.0085,
+   "stale_min": 0.0025,
+   "stale_max": 0.014,
+   "seeds": 5
+  }
+ },
+ "static_guesses": [
+  {
+   "views": "T1+T2+T4",
+   "sor_total": 50262
+  },
+  {
+   "views": "T2+T4+T6",
+   "sor_total": 53252
+  },
+  {
+   "views": "T2+T3+T4",
+   "sor_total": 60579
+  },
+  {
+   "views": "T2+T4+T5",
+   "sor_total": 64215
+  },
+  {
+   "views": "T1+T4+T6",
+   "sor_total": 132275
+  },
+  {
+   "views": "T3+T4+T6",
+   "sor_total": 134090
+  },
+  {
+   "views": "T4+T5+T6",
+   "sor_total": 137726
+  },
+  {
+   "views": "T1+T3+T4",
+   "sor_total": 139602
+  },
+  {
+   "views": "T3+T4+T5",
+   "sor_total": 143203
+  },
+  {
+   "views": "T1+T4+T5",
+   "sor_total": 143238
+  },
+  {
+   "views": "T2+T3+T6",
+   "sor_total": 1191413
+  },
+  {
+   "views": "T2+T5+T6",
+   "sor_total": 1195049
+  },
+  {
+   "views": "T2+T3+T5",
+   "sor_total": 1200526
+  },
+  {
+   "views": "T1+T2+T6",
+   "sor_total": 1204886
+  },
+  {
+   "views": "T1+T2+T3",
+   "sor_total": 1212213
+  },
+  {
+   "views": "T1+T2+T5",
+   "sor_total": 1215849
+  },
+  {
+   "views": "T3+T5+T6",
+   "sor_total": 1274037
+  },
+  {
+   "views": "T1+T3+T6",
+   "sor_total": 1294226
+  },
+  {
+   "views": "T1+T5+T6",
+   "sor_total": 1297862
+  },
+  {
+   "views": "T1+T3+T5",
+   "sor_total": 1303339
+  }
+ ],
+ "single_faults": {
+  "lost events only": {
+   "no checks": {
+    "sor_total": 89484.2,
+    "sor_min": 71793,
+    "sor_max": 105757,
+    "stale_rate": 0.0,
+    "stale_min": 0.0,
+    "stale_max": 0.0,
+    "seeds": 5
+   },
+   "self-healing": {
+    "sor_total": 162873.8,
+    "sor_min": 138841,
+    "sor_max": 183780,
+    "stale_rate": 0.0,
+    "stale_min": 0.0,
+    "stale_max": 0.0,
+    "seeds": 5
+   }
+  },
+  "backfill only": {
+   "no checks": {
+    "sor_total": 89418,
+    "sor_min": 71727,
+    "sor_max": 105693,
+    "stale_rate": 0.0823,
+    "stale_min": 0.057,
+    "stale_max": 0.103,
+    "seeds": 5
+   },
+   "self-healing": {
+    "sor_total": 204871,
+    "sor_min": 167326,
+    "sor_max": 279648,
+    "stale_rate": 0.0108,
+    "stale_min": 0.006,
+    "stale_max": 0.015,
+    "seeds": 5
+   }
+  },
+  "rule change only": {
+   "no checks": {
+    "sor_total": 89418,
+    "sor_min": 71727,
+    "sor_max": 105693,
+    "stale_rate": 0.0233,
+    "stale_min": 0.011,
+    "stale_max": 0.0325,
+    "seeds": 5
+   },
+   "self-healing": {
+    "sor_total": 171543.8,
+    "sor_min": 146875,
+    "sor_max": 191802,
+    "stale_rate": 0.0023,
+    "stale_min": 0.001,
+    "stale_max": 0.003,
+    "seeds": 5
+   }
+  }
+ },
+ "backfill_size": {
+  "5": {
+   "sor_total": 169996.2,
+   "sor_min": 159379,
+   "sor_max": 183729,
+   "stale_rate": 0.0011,
+   "stale_min": 0.0,
+   "stale_max": 0.0025,
+   "seeds": 5,
+   "detected_in": "3/5 runs",
+   "questions_to_detect_median": 100
+  },
+  "20": {
+   "sor_total": 177204.8,
+   "sor_min": 159302,
+   "sor_max": 191446,
+   "stale_rate": 0.0015,
+   "stale_min": 0.0005,
+   "stale_max": 0.0025,
+   "seeds": 5,
+   "detected_in": "5/5 runs",
+   "questions_to_detect_median": 100
+  },
+  "150": {
+   "sor_total": 204871,
+   "sor_min": 167326,
+   "sor_max": 279648,
+   "stale_rate": 0.0108,
+   "stale_min": 0.006,
+   "stale_max": 0.015,
+   "seeds": 5,
+   "detected_in": "5/5 runs",
+   "questions_to_detect_median": 50
+  }
+ },
+ "sensitivity": {
+  "write-heavy (10 writes per question)": {
+   "S0 \u00b7 no cache": {
+    "questions": 2000,
+    "sor_question": 1395341,
+    "sor_upkeep": 0,
+    "sor_verify": 0,
+    "sor_total": 1395341,
+    "rm_rows": 0,
+    "stale": 0,
+    "stale_rate": 0.0,
+    "cache_hits": 0,
+    "served_prepared": 0,
+    "log": [],
+    "incidents": [],
+    "fault_at_q": {
+     "backfill": 600,
+     "rule": 1400
+    },
+    "verifier": {},
+    "tools": []
+   },
+   "S3 \u00b7 self-building, no checks": {
+    "questions": 2000,
+    "sor_question": 59469,
+    "sor_upkeep": 50728,
+    "sor_verify": 0,
+    "sor_total": 110197,
+    "rm_rows": 92319,
+    "stale": 98,
+    "stale_rate": 0.049,
+    "cache_hits": 0,
+    "served_prepared": 1269,
+    "log": [
+     [
+      50,
+      "promote",
+      "T2_adjuster_missing_docs"
+     ],
+     [
+      50,
+      "promote",
+      "T4_team_stale_claims"
+     ],
+     [
+      50,
+      "promote",
+      "T6_adjuster_loss_mix"
+     ],
+     [
+      100,
+      "promote",
+      "T1_claim_blockers"
+     ]
+    ],
+    "incidents": [],
+    "fault_at_q": {
+     "backfill": 600,
+     "rule": 1400
+    },
+    "verifier": {
+     "checks": 0,
+     "mismatches": 0,
+     "repairs": 0,
+     "rebuilds": 0,
+     "gaps": 191,
+     "replayed": 193
+    },
+    "tools": [
+     "T1_claim_blockers",
+     "T2_adjuster_missing_docs",
+     "T4_team_stale_claims",
+     "T6_adjuster_loss_mix"
+    ]
+   },
+   "S4 \u00b7 self-building + self-healing": {
+    "questions": 2000,
+    "sor_question": 78490,
+    "sor_upkeep": 70348,
+    "sor_verify": 53881,
+    "sor_total": 202719,
+    "rm_rows": 90367,
+    "stale": 6,
+    "stale_rate": 0.003,
+    "cache_hits": 0,
+    "served_prepared": 1249,
+    "log": [
+     [
+      50,
+      "promote (shadow)",
+      "T2_adjuster_missing_docs"
+     ],
+     [
+      50,
+      "promote (shadow)",
+      "T4_team_stale_claims"
+     ],
+     [
+      50,
+      "promote (shadow)",
+      "T6_adjuster_loss_mix"
+     ],
+     [
+      67,
+      "live",
+      "T4_team_stale_claims"
+     ],
+     [
+      83,
+      "live",
+      "T2_adjuster_missing_docs"
+     ],
+     [
+      93,
+      "live",
+      "T6_adjuster_loss_mix"
+     ],
+     [
+      100,
+      "promote (shadow)",
+      "T1_claim_blockers"
+     ],
+     [
+      112,
+      "live",
+      "T1_claim_blockers"
+     ]
+    ],
+    "incidents": [
+     [
+      650,
+      "reconcile: 1/40 drifted",
+      "missing"
+     ],
+     [
+      650,
+      "drift rebuild",
+      "missing"
+     ],
+     [
+      1450,
+      "definition-change rebuild",
+      "missing"
+     ]
+    ],
+    "fault_at_q": {
+     "backfill": 600,
+     "rule": 1400
+    },
+    "verifier": {
+     "checks": 4825,
+     "mismatches": 1,
+     "repairs": 1,
+     "rebuilds": 2,
+     "gaps": 191,
+     "replayed": 193
+    },
+    "tools": [
+     "T1_claim_blockers",
+     "T2_adjuster_missing_docs",
+     "T4_team_stale_claims",
+     "T6_adjuster_loss_mix"
+    ]
+   }
+  },
+  "no skew over who is asked about": {
+   "S0 \u00b7 no cache": {
+    "questions": 2000,
+    "sor_question": 1120957,
+    "sor_upkeep": 0,
+    "sor_verify": 0,
+    "sor_total": 1120957,
+    "rm_rows": 0,
+    "stale": 0,
+    "stale_rate": 0.0,
+    "cache_hits": 0,
+    "served_prepared": 0,
+    "log": [],
+    "incidents": [],
+    "fault_at_q": {
+     "backfill": 600,
+     "rule": 1400
+    },
+    "verifier": {},
+    "tools": []
+   },
+   "S3 \u00b7 self-building, no checks": {
+    "questions": 2000,
+    "sor_question": 73421,
+    "sor_upkeep": 36237,
+    "sor_verify": 0,
+    "sor_total": 109658,
+    "rm_rows": 87208,
+    "stale": 191,
+    "stale_rate": 0.0955,
+    "cache_hits": 0,
+    "served_prepared": 1613,
+    "log": [
+     [
+      50,
+      "promote",
+      "T2_adjuster_missing_docs"
+     ],
+     [
+      50,
+      "promote",
+      "T6_adjuster_loss_mix"
+     ],
+     [
+      100,
+      "promote",
+      "T4_team_stale_claims"
+     ],
+     [
+      150,
+      "promote",
+      "T1_claim_blockers"
+     ],
+     [
+      1300,
+      "promote",
+      "T3_customer_financials"
+     ],
+     [
+      1350,
+      "promote",
+      "T5_claim_paid_total"
+     ]
+    ],
+    "incidents": [],
+    "fault_at_q": {
+     "backfill": 600,
+     "rule": 1400
+    },
+    "verifier": {
+     "checks": 0,
+     "mismatches": 0,
+     "repairs": 0,
+     "rebuilds": 0,
+     "gaps": 65,
+     "replayed": 66
+    },
+    "tools": [
+     "T1_claim_blockers",
+     "T2_adjuster_missing_docs",
+     "T3_customer_financials",
+     "T4_team_stale_claims",
+     "T5_claim_paid_total",
+     "T6_adjuster_loss_mix"
+    ]
+   },
+   "S4 \u00b7 self-building + self-healing": {
+    "questions": 2000,
+    "sor_question": 94124,
+    "sor_upkeep": 72704,
+    "sor_verify": 48335,
+    "sor_total": 215163,
+    "rm_rows": 85113,
+    "stale": 17,
+    "stale_rate": 0.0085,
+    "cache_hits": 0,
+    "served_prepared": 1583,
+    "log": [
+     [
+      50,
+      "promote (shadow)",
+      "T2_adjuster_missing_docs"
+     ],
+     [
+      50,
+      "promote (shadow)",
+      "T6_adjuster_loss_mix"
+     ],
+     [
+      76,
+      "live",
+      "T2_adjuster_missing_docs"
+     ],
+     [
+      91,
+      "live",
+      "T6_adjuster_loss_mix"
+     ],
+     [
+      100,
+      "promote (shadow)",
+      "T4_team_stale_claims"
+     ],
+     [
+      117,
+      "live",
+      "T4_team_stale_claims"
+     ],
+     [
+      150,
+      "promote (shadow)",
+      "T1_claim_blockers"
+     ],
+     [
+      165,
+      "live",
+      "T1_claim_blockers"
+     ],
+     [
+      1300,
+      "promote (shadow)",
+      "T3_customer_financials"
+     ],
+     [
+      1317,
+      "live",
+      "T3_customer_financials"
+     ],
+     [
+      1350,
+      "promote (shadow)",
+      "T5_claim_paid_total"
+     ],
+     [
+      1369,
+      "live",
+      "T5_claim_paid_total"
+     ]
+    ],
+    "incidents": [
+     [
+      650,
+      "reconcile: 1/40 drifted",
+      "activity"
+     ],
+     [
+      650,
+      "drift rebuild",
+      "activity"
+     ],
+     [
+      650,
+      "reconcile: 2/40 drifted",
+      "missing"
+     ],
+     [
+      650,
+      "drift rebuild",
+      "missing"
+     ],
+     [
+      1450,
+      "definition-change rebuild",
+      "missing"
+     ]
+    ],
+    "fault_at_q": {
+     "backfill": 600,
+     "rule": 1400
+    },
+    "verifier": {
+     "checks": 5394,
+     "mismatches": 3,
+     "repairs": 3,
+     "rebuilds": 3,
+     "gaps": 65,
+     "replayed": 66
+    },
+    "tools": [
+     "T1_claim_blockers",
+     "T2_adjuster_missing_docs",
+     "T3_customer_financials",
+     "T4_team_stale_claims",
+     "T5_claim_paid_total",
+     "T6_adjuster_loss_mix"
+    ]
+   }
+  },
+  "flat mix of question types": {
+   "S0 \u00b7 no cache": {
+    "questions": 2000,
+    "sor_question": 1518408,
+    "sor_upkeep": 0,
+    "sor_verify": 0,
+    "sor_total": 1518408,
+    "rm_rows": 0,
+    "stale": 0,
+    "stale_rate": 0.0,
+    "cache_hits": 0,
+    "served_prepared": 0,
+    "log": [],
+    "incidents": [],
+    "fault_at_q": {
+     "backfill": 600,
+     "rule": 1400
+    },
+    "verifier": {},
+    "tools": []
+   },
+   "S3 \u00b7 self-building, no checks": {
+    "questions": 2000,
+    "sor_question": 46867,
+    "sor_upkeep": 34373,
+    "sor_verify": 0,
+    "sor_total": 81240,
+    "rm_rows": 126525,
+    "stale": 224,
+    "stale_rate": 0.112,
+    "cache_hits": 0,
+    "served_prepared": 1303,
+    "log": [
+     [
+      50,
+      "promote",
+      "T2_adjuster_missing_docs"
+     ],
+     [
+      50,
+      "promote",
+      "T4_team_stale_claims"
+     ],
+     [
+      50,
+      "promote",
+      "T6_adjuster_loss_mix"
+     ],
+     [
+      100,
+      "promote",
+      "T1_claim_blockers"
+     ]
+    ],
+    "incidents": [],
+    "fault_at_q": {
+     "backfill": 600,
+     "rule": 1400
+    },
+    "verifier": {
+     "checks": 0,
+     "mismatches": 0,
+     "repairs": 0,
+     "rebuilds": 0,
+     "gaps": 65,
+     "replayed": 66
+    },
+    "tools": [
+     "T1_claim_blockers",
+     "T2_adjuster_missing_docs",
+     "T4_team_stale_claims",
+     "T6_adjuster_loss_mix"
+    ]
+   },
+   "S4 \u00b7 self-building + self-healing": {
+    "questions": 2000,
+    "sor_question": 64486,
+    "sor_upkeep": 71790,
+    "sor_verify": 47377,
+    "sor_total": 183653,
+    "rm_rows": 124733,
+    "stale": 87,
+    "stale_rate": 0.0435,
+    "cache_hits": 0,
+    "served_prepared": 1283,
+    "log": [
+     [
+      50,
+      "promote (shadow)",
+      "T2_adjuster_missing_docs"
+     ],
+     [
+      50,
+      "promote (shadow)",
+      "T4_team_stale_claims"
+     ],
+     [
+      50,
+      "promote (shadow)",
+      "T6_adjuster_loss_mix"
+     ],
+     [
+      67,
+      "live",
+      "T4_team_stale_claims"
+     ],
+     [
+      77,
+      "live",
+      "T6_adjuster_loss_mix"
+     ],
+     [
+      80,
+      "live",
+      "T2_adjuster_missing_docs"
+     ],
+     [
+      100,
+      "promote (shadow)",
+      "T1_claim_blockers"
+     ],
+     [
+      137,
+      "live",
+      "T1_claim_blockers"
+     ]
+    ],
+    "incidents": [
+     [
+      900,
+      "reconcile: 1/40 drifted",
+      "activity"
+     ],
+     [
+      900,
+      "drift rebuild",
+      "activity"
+     ],
+     [
+      1050,
+      "reconcile: 1/40 drifted",
+      "missing"
+     ],
+     [
+      1050,
+      "drift rebuild",
+      "missing"
+     ],
+     [
+      1450,
+      "definition-change rebuild",
+      "missing"
+     ]
+    ],
+    "fault_at_q": {
+     "backfill": 600,
+     "rule": 1400
+    },
+    "verifier": {
+     "checks": 4824,
+     "mismatches": 2,
+     "repairs": 2,
+     "rebuilds": 3,
+     "gaps": 65,
+     "replayed": 66
+    },
+    "tools": [
+     "T1_claim_blockers",
+     "T2_adjuster_missing_docs",
+     "T4_team_stale_claims",
+     "T6_adjuster_loss_mix"
+    ]
+   }
+  },
+  "no demand shift": {
+   "S0 \u00b7 no cache": {
+    "questions": 2000,
+    "sor_question": 2033001,
+    "sor_upkeep": 0,
+    "sor_verify": 0,
+    "sor_total": 2033001,
+    "rm_rows": 0,
+    "stale": 0,
+    "stale_rate": 0.0,
+    "cache_hits": 0,
+    "served_prepared": 0,
+    "log": [],
+    "incidents": [],
+    "fault_at_q": {
+     "backfill": 600,
+     "rule": 1400
+    },
+    "verifier": {},
+    "tools": []
+   },
+   "S3 \u00b7 self-building, no checks": {
+    "questions": 2000,
+    "sor_question": 54670,
+    "sor_upkeep": 34373,
+    "sor_verify": 0,
+    "sor_total": 89043,
+    "rm_rows": 156392,
+    "stale": 261,
+    "stale_rate": 0.1305,
+    "cache_hits": 0,
+    "served_prepared": 1651,
+    "log": [
+     [
+      50,
+      "promote",
+      "T4_team_stale_claims"
+     ],
+     [
+      100,
+      "promote",
+      "T2_adjuster_missing_docs"
+     ],
+     [
+      100,
+      "promote",
+      "T6_adjuster_loss_mix"
+     ],
+     [
+      150,
+      "promote",
+      "T1_claim_blockers"
+     ]
+    ],
+    "incidents": [],
+    "fault_at_q": {
+     "backfill": 600,
+     "rule": 1400
+    },
+    "verifier": {
+     "checks": 0,
+     "mismatches": 0,
+     "repairs": 0,
+     "rebuilds": 0,
+     "gaps": 65,
+     "replayed": 66
+    },
+    "tools": [
+     "T1_claim_blockers",
+     "T2_adjuster_missing_docs",
+     "T4_team_stale_claims",
+     "T6_adjuster_loss_mix"
+    ]
+   },
+   "S4 \u00b7 self-building + self-healing": {
+    "questions": 2000,
+    "sor_question": 74188,
+    "sor_upkeep": 70972,
+    "sor_verify": 58311,
+    "sor_total": 203471,
+    "rm_rows": 154361,
+    "stale": 49,
+    "stale_rate": 0.0245,
+    "cache_hits": 0,
+    "served_prepared": 1631,
+    "log": [
+     [
+      50,
+      "promote (shadow)",
+      "T4_team_stale_claims"
+     ],
+     [
+      63,
+      "live",
+      "T4_team_stale_claims"
+     ],
+     [
+      100,
+      "promote (shadow)",
+      "T2_adjuster_missing_docs"
+     ],
+     [
+      100,
+      "promote (shadow)",
+      "T6_adjuster_loss_mix"
+     ],
+     [
+      113,
+      "live",
+      "T2_adjuster_missing_docs"
+     ],
+     [
+      138,
+      "live",
+      "T6_adjuster_loss_mix"
+     ],
+     [
+      150,
+      "promote (shadow)",
+      "T1_claim_blockers"
+     ],
+     [
+      168,
+      "live",
+      "T1_claim_blockers"
+     ]
+    ],
+    "incidents": [
+     [
+      650,
+      "reconcile: 2/40 drifted",
+      "missing"
+     ],
+     [
+      650,
+      "drift rebuild",
+      "missing"
+     ],
+     [
+      700,
+      "reconcile: 1/40 drifted",
+      "activity"
+     ],
+     [
+      700,
+      "drift rebuild",
+      "activity"
+     ],
+     [
+      1439,
+      "mismatch",
+      "T2_adjuster_missing_docs"
+     ],
+     [
+      1450,
+      "reconcile: 2/40 drifted",
+      "missing"
+     ],
+     [
+      1450,
+      "drift rebuild",
+      "missing"
+     ]
+    ],
+    "fault_at_q": {
+     "backfill": 600,
+     "rule": 1400
+    },
+    "verifier": {
+     "checks": 4809,
+     "mismatches": 6,
+     "repairs": 6,
+     "rebuilds": 3,
+     "gaps": 65,
+     "replayed": 66
+    },
+    "tools": [
+     "T1_claim_blockers",
+     "T2_adjuster_missing_docs",
+     "T4_team_stale_claims",
+     "T6_adjuster_loss_mix"
+    ]
+   }
+  }
+ },
+ "type_shares": {
+  "T1": {
+   "questions": 602,
+   "share_of_reads": 0.010195567100041807
+  },
+  "T2": {
+   "questions": 288,
+   "share_of_reads": 0.07395277193319123
+  },
+  "T3": {
+   "questions": 499,
+   "share_of_reads": 0.00392796194888595
+  },
+  "T4": {
+   "questions": 319,
+   "share_of_reads": 0.902076808147544
+  },
+  "T5": {
+   "questions": 135,
+   "share_of_reads": 0.0008618385432015846
+  },
+  "T6": {
+   "questions": 157,
+   "share_of_reads": 0.008985052327135406
+  }
+ }
+}
